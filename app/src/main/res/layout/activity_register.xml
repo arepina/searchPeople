@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gaya.searchpeople.RegisterActivity">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Username*"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etPassword"
+        app:layout_constraintRight_toRightOf="@+id/etPassword" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Password*"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etTryPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etTryPassword"
+        app:layout_constraintRight_toRightOf="@+id/etTryPassword"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etEmail"
+        app:layout_constraintRight_toRightOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Email*"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/etPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etPhone"
+        app:layout_constraintRight_toRightOf="@+id/etPhone" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="18dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/etSurname"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Surname*"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etAge"
+        app:layout_constraintRight_toRightOf="@+id/etAge" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:hint="Name*"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etSurname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etSurname"
+        app:layout_constraintRight_toRightOf="@+id/etSurname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Phone number*"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/etCity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etCity"
+        app:layout_constraintRight_toRightOf="@+id/etCity" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="City/town"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etUsername"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etUsername"
+        app:layout_constraintRight_toRightOf="@+id/etUsername" />
+
+    <EditText
+        android:id="@+id/etTryPassword"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Confirm password*"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/bRegister"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintLeft_toLeftOf="@+id/bRegister"
+        app:layout_constraintRight_toRightOf="@+id/bRegister" />
+</android.support.constraint.ConstraintLayout>
